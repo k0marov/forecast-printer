@@ -19,7 +19,7 @@ class APIForecastGetter(forecast_getter.ForecastGetter):
         return self._map_forecast(self._get_forecast_json())
 
     def _get_forecast_json(self) -> typing.Dict:
-        url = _BASE_URL + "&key=" + self.config.api_key
+        url = _BASE_URL + "&key=" + self.config.key
         return requests.get(url).json()
 
     def _map_forecast(self, json: typing.Dict) -> values.Forecast:
