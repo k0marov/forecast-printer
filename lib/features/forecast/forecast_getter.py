@@ -1,6 +1,6 @@
 import abc
 
-from services.forecast import values
+from lib.features.forecast import values
 
 
 class ForecastGetter(abc.ABC):
