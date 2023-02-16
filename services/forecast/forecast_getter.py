@@ -1,6 +1,7 @@
 import abc
 
-from . import values
+from services.forecast import values
+
 
 class ForecastGetter(abc.ABC):
     @abc.abstractmethod

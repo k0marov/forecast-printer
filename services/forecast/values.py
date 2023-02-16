@@ -9,13 +9,13 @@ class WeatherCondition:
 
 @dataclasses.dataclass
 class DayWeather:
-    date: datetime.date
+    # date: datetime.date
     temp_c: float
-    wind_kmh: float
-    chance_of_rain: float
-    condition: WeatherCondition
+    # wind_kmh: float
+    # chance_of_rain: float
+    # condition: WeatherCondition
 
 @dataclasses.dataclass
 class Forecast:
     today: DayWeather
-    tomorrow: DayWeather
+    # tomorrow: DayWeather
